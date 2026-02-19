@@ -63,6 +63,8 @@
       <x:String>System.Xml.Linq</x:String>
       <x:String>System.Windows.Markup</x:String>
       <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -147,7 +149,7 @@
       <AssemblyReference>System.Collections.Immutable</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="770,7540" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap:VirtualizedContainerService.HintSize="877.2,2982.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Default="Hammer" Name="str_SearchText" />
       <Variable x:TypeArguments="x:String" Name="firstProductTitle" />
@@ -158,29 +160,29 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Delay Duration="00:00:07" sap:VirtualizedContainerService.HintSize="596,123" sap2010:WorkflowViewState.IdRef="Delay_1" />
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="596,7394" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="521.6,122.4" sap2010:WorkflowViewState.IdRef="Delay_1" />
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="521.6,2836.8" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
-        <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="594,6913" sap2010:WorkflowViewState.IdRef="Sequence_11">
+        <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="520,2340" sap2010:WorkflowViewState.IdRef="Sequence_11">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <If sap:VirtualizedContainerService.HintSize="560,447" sap2010:WorkflowViewState.IdRef="If_2">
+          <If sap:VirtualizedContainerService.HintSize="486.4,462.4" sap2010:WorkflowViewState.IdRef="If_2">
             <If.Condition>
               <InArgument x:TypeArguments="x:Boolean">
                 <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_30">reportIdLocal.Equals(0)==true</CSharpValue>
               </InArgument>
             </If.Condition>
             <If.Then>
-              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,218" sap2010:WorkflowViewState.IdRef="Sequence_14">
+              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="449.6,225.6" sap2010:WorkflowViewState.IdRef="Sequence_14">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ra:CreateReport ContinueOnError="{x:Null}" DisplayName="Create Report" sap:VirtualizedContainerService.HintSize="416,158" sap2010:WorkflowViewState.IdRef="CreateReport_1" ReportName="TestSearchReport">
+                <ra:CreateReport ContinueOnError="{x:Null}" DisplayName="Create Report" sap:VirtualizedContainerService.HintSize="416,161.6" sap2010:WorkflowViewState.IdRef="CreateReport_1" ReportName="TestSearchReport">
                   <ra:CreateReport.ReportLocation>
                     <InArgument x:TypeArguments="x:String">
                       <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_31">Environment.GetFolderPath(Environment.SpecialFolder.UserProfile)+"\\Downloads\\Reports"</CSharpValue>
@@ -195,7 +197,7 @@
               </Sequence>
             </If.Then>
             <If.Else>
-              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,90" sap2010:WorkflowViewState.IdRef="Sequence_15">
+              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="449.6,94.4" sap2010:WorkflowViewState.IdRef="Sequence_15">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -204,7 +206,7 @@
               </Sequence>
             </If.Else>
           </If>
-          <ra:StartSuite ContinueOnError="{x:Null}" DisplayName="Start Suite" sap:VirtualizedContainerService.HintSize="560,118" sap2010:WorkflowViewState.IdRef="StartSuite_2" SuiteName="Test_Search_Suite">
+          <ra:StartSuite ContinueOnError="{x:Null}" DisplayName="Start Suite" sap:VirtualizedContainerService.HintSize="486.4,121.6" sap2010:WorkflowViewState.IdRef="StartSuite_2" SuiteName="Test_Search_Suite">
             <ra:StartSuite.ReportId>
               <InArgument x:TypeArguments="x:Int32">
                 <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_32">reportIdLocal</CSharpValue>
@@ -216,7 +218,7 @@
               </OutArgument>
             </ra:StartSuite.suiteId>
           </ra:StartSuite>
-          <ra:StartTest ContinueOnError="{x:Null}" TagName="{x:Null}" TestDescription="{x:Null}" DisplayName="Start Test" sap:VirtualizedContainerService.HintSize="560,118" sap2010:WorkflowViewState.IdRef="StartTest_1" Priority="Low" TestName="Test_Search_Test">
+          <ra:StartTest ContinueOnError="{x:Null}" TagName="{x:Null}" TestDescription="{x:Null}" DisplayName="Start Test" sap:VirtualizedContainerService.HintSize="486.4,121.6" sap2010:WorkflowViewState.IdRef="StartTest_1" Priority="Low" TestName="Test_Search_Test">
             <ra:StartTest.ReportId>
               <InArgument x:TypeArguments="x:Int32">
                 <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_33">reportIdLocal</CSharpValue>
@@ -233,43 +235,280 @@
               </OutArgument>
             </ra:StartTest.testId>
           </ra:StartTest>
-          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Overview - Practice Software Testing -" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="560,6170" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="92d45d27-b05e-4def-b4cb-996dfe27f61d" Version="V2">
+          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Overview - Practice Software Testing -" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="486.4,1570.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="92d45d27-b05e-4def-b4cb-996dfe27f61d" Version="V2">
             <uix:NApplicationCard.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="558,5976" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="484.8,1372.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <uix:NCheckState DisplayName="Check App State 'Deepak Gupta'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="524,799" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="92d45d27-b05e-4def-b4cb-996dfe27f61d" Version="V5">
+                  <uix:NCheckState DisplayName="Check App State 'Deepak Gupta'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="451.2,1308.8" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="92d45d27-b05e-4def-b4cb-996dfe27f61d" Version="V5">
                     <uix:NCheckState.IfExists>
-                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,226" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="449.6,670.4" sap2010:WorkflowViewState.IdRef="Sequence_3">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info">
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,178.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info">
                           <ui:LogMessage.Message>
                             <InArgument x:TypeArguments="x:Object">
                               <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_27">"User is on Home Page(Dahboard)"</CSharpValue>
                             </InArgument>
                           </ui:LogMessage.Message>
                         </ui:LogMessage>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Home(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,197.6" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="92d45d27-b05e-4def-b4cb-996dfe27f61d" Version="V5">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="practicesoftwaretesting.com/account" CVScreenId="ea178c6c-b8a3-4d81-8ac7-b0f193be1a88" ContentHash="BBHlJ3p6DkGtJhwjtfQM5g" DesignTimeRectangle="1234, 257, 73, 50" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='navbarSupportedContent' tag='A' aaname='Home' /&gt;" Guid="504b9c15-c5db-497a-b26d-474d9e3b0fb7" InformativeScreenshot="e5211ed57c9fce51f7c82c0f22a67567.jpg" Reference="QUyr5HjRO0207_LWey3M3w/wQZ2FRyuf0GKVmbLn3z49g" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Overview - Practice Software Testing - Toolshop - v5.0' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
+                          </uix:NClick.Target>
+                        </uix:NClick>
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,178.4" sap2010:WorkflowViewState.IdRef="LogMessage_15" Level="Info">
+                          <ui:LogMessage.Message>
+                            <InArgument x:TypeArguments="x:Object">
+                              <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_46">"Clicked on Homepage"</CSharpValue>
+                            </InArgument>
+                          </ui:LogMessage.Message>
+                        </ui:LogMessage>
+                        <uix:NCheckState DelayBefore="0.8" DisplayName="Check App State 'IMG'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="416,52" sap2010:WorkflowViewState.IdRef="NCheckState_4" ScopeIdentifier="92d45d27-b05e-4def-b4cb-996dfe27f61d" Version="V5">
+                          <uix:NCheckState.IfExists>
+                            <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="520,4265.6" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="486.4,178.4" sap2010:WorkflowViewState.IdRef="LogMessage_16" Level="Info">
+                                <ui:LogMessage.Message>
+                                  <InArgument x:TypeArguments="x:Object">
+                                    <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_47">"Home page appeared"</CSharpValue>
+                                  </InArgument>
+                                </ui:LogMessage.Message>
+                              </ui:LogMessage>
+                              <uix:NMouseScroll KeyModifiers="{x:Null}" DelayBefore="0.9" Direction="Down" DisplayName="Mouse Scroll" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486.4,318.4" sap2010:WorkflowViewState.IdRef="NMouseScroll_2" InteractionMode="HardwareEvents" MovementUnits="10" ScopeIdentifier="92d45d27-b05e-4def-b4cb-996dfe27f61d" Version="V5">
+                                <uix:NMouseScroll.SearchedElement>
+                                  <uix:SearchedElement>
+                                    <uix:SearchedElement.InUiElement>
+                                      <InArgument x:TypeArguments="ui:UiElement" />
+                                    </uix:SearchedElement.InUiElement>
+                                    <uix:SearchedElement.OutUiElement>
+                                      <OutArgument x:TypeArguments="ui:UiElement" />
+                                    </uix:SearchedElement.OutUiElement>
+                                    <uix:SearchedElement.Target>
+                                      <uix:TargetAnchorable BrowserURL="practicesoftwaretesting.com" CVScreenId="aafd1ba9-2fa8-4e26-89ed-7fd2604f9cbf" ContentHash="sUV8gLKIZEurVMBQW0RFzQ" CvElementArea="146, 718, 254, 51" CvType="InputBox" DesignTimeRectangle="148, 720, 252, 47" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='search-query' tag='INPUT' aaname='Search' /&gt;" Guid="bed30285-148e-4615-9f49-7aaa2b989904" InformativeScreenshot="384b1a874b0a8e92bde1b799772e646f.jpg" Reference="QUyr5HjRO0207_LWey3M3w/EU09nBNrfUaWKWQIYe2LpA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Practice Software Testing - Toolshop - v5.0' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None" />
+                                    </uix:SearchedElement.Target>
+                                    <uix:SearchedElement.Timeout>
+                                      <InArgument x:TypeArguments="x:Double" />
+                                    </uix:SearchedElement.Timeout>
+                                  </uix:SearchedElement>
+                                </uix:NMouseScroll.SearchedElement>
+                              </uix:NMouseScroll>
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="486.4,178.4" sap2010:WorkflowViewState.IdRef="LogMessage_18" Level="Info">
+                                <ui:LogMessage.Message>
+                                  <InArgument x:TypeArguments="x:Object">
+                                    <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_48">"Scrolled Down to Search Box"</CSharpValue>
+                                  </InArgument>
+                                </ui:LogMessage.Message>
+                              </ui:LogMessage>
+                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Mouse Scroll'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486.4,249.6" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="SameAsCard" ScopeIdentifier="92d45d27-b05e-4def-b4cb-996dfe27f61d" Version="V5">
+                                <uix:NTypeInto.Target>
+                                  <uix:TargetAnchorable BrowserURL="practicesoftwaretesting.com" CVScreenId="aafd1ba9-2fa8-4e26-89ed-7fd2604f9cbf" ContentHash="sUV8gLKIZEurVMBQW0RFzQ" CvElementArea="146, 718, 254, 51" CvType="InputBox" DesignTimeRectangle="148, 720, 252, 47" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='search-query' tag='INPUT' aaname='Search' /&gt;" Guid="bed30285-148e-4615-9f49-7aaa2b989904" InformativeScreenshot="384b1a874b0a8e92bde1b799772e646f.jpg" Reference="QUyr5HjRO0207_LWey3M3w/EU09nBNrfUaWKWQIYe2LpA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Practice Software Testing - Toolshop - v5.0' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None" />
+                                </uix:NTypeInto.Target>
+                                <uix:NTypeInto.Text>
+                                  <InArgument x:TypeArguments="x:String">
+                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_49">str_SearchText</CSharpValue>
+                                  </InArgument>
+                                </uix:NTypeInto.Text>
+                              </uix:NTypeInto>
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="486.4,178.4" sap2010:WorkflowViewState.IdRef="LogMessage_19" Level="Info">
+                                <ui:LogMessage.Message>
+                                  <InArgument x:TypeArguments="x:Object">
+                                    <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_50">"Entered the thing that we wanted to search."</CSharpValue>
+                                  </InArgument>
+                                </ui:LogMessage.Message>
+                              </ui:LogMessage>
+                              <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="2" DelayBefore="1" DisplayName="Click 'Search'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486.4,197.6" sap2010:WorkflowViewState.IdRef="NClick_6" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="92d45d27-b05e-4def-b4cb-996dfe27f61d" Version="V5">
+                                <uix:NClick.Target>
+                                  <uix:TargetAnchorable BrowserURL="practicesoftwaretesting.com" CVScreenId="b4db1496-1143-4d87-87f1-aeebaf722798" ContentHash="dX863oAJPkalQJCq-ir_aw" CvElementArea="437, 381, 95, 50" CvTextArea="455, 396, 61, 18" CvTextArgument="Search" CvType="Button" DesignTimeRectangle="441, 382, 91, 47" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" Guid="9abab3ec-742c-4bc9-9bc9-cb92451cc745" InformativeScreenshot="25b6ae1b0f942cf34d8c391e15efd72b.jpg" Reference="QUyr5HjRO0207_LWey3M3w/NxAfDZg56kGQgWZ_qgyhDw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Practice Software Testing - Toolshop - v5.0' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
+                                    <uix:TargetAnchorable.Anchors>
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                        <uix:Target CVScreenId="b4db1496-1143-4d87-87f1-aeebaf722798" CvElementArea="399, 381, 44, 49" CvTextArea="412, 396, 15, 18" CvTextArgument="X" CvType="Button" DesignTimeRectangle="399, 382, 43, 47" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='reset' class='btn btn-warning' aaname='X ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='X' /&gt;" Guid="cbd1e6d6-1931-4c88-a854-a82127c08a72" SearchSteps="FuzzySelector, CV" />
+                                      </scg:List>
+                                    </uix:TargetAnchorable.Anchors>
+                                  </uix:TargetAnchorable>
+                                </uix:NClick.Target>
+                              </uix:NClick>
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="486.4,178.4" sap2010:WorkflowViewState.IdRef="LogMessage_20" Level="Info">
+                                <ui:LogMessage.Message>
+                                  <InArgument x:TypeArguments="x:Object">
+                                    <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_51">"Clicked on search button"</CSharpValue>
+                                  </InArgument>
+                                </ui:LogMessage.Message>
+                              </ui:LogMessage>
+                              <uix:NCheckState DisplayName="Check App State 'Claw Hammer with Shock …'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="486.4,2722.4" sap2010:WorkflowViewState.IdRef="NCheckState_6" ScopeIdentifier="92d45d27-b05e-4def-b4cb-996dfe27f61d" Version="V5">
+                                <uix:NCheckState.IfExists>
+                                  <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="484.8,1762.4" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="451.2,178.4" sap2010:WorkflowViewState.IdRef="LogMessage_21" Level="Info">
+                                      <ui:LogMessage.Message>
+                                        <InArgument x:TypeArguments="x:Object">
+                                          <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_52">"Search Result appears"</CSharpValue>
+                                        </InArgument>
+                                      </ui:LogMessage.Message>
+                                    </ui:LogMessage>
+                                    <uix:NGetText DelayBefore="4" DisplayName="Get Text 'Claw Hammer with Shock …(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,146.4" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="92d45d27-b05e-4def-b4cb-996dfe27f61d" Version="V5">
+                                      <uix:NGetText.Target>
+                                        <uix:TargetAnchorable BrowserURL="practicesoftwaretesting.com" ContentHash="I5tyNU9wwk2SsXDVDmLQOw" DesignTimeRectangle="598, 696, 338, 60" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='H5' /&gt;" Guid="c94ba388-165a-43d9-9f59-7980321c2628" InformativeScreenshot="6f2982c31b02e19f8e969382b1de6dc7.jpg" Reference="QUyr5HjRO0207_LWey3M3w/zosXwwBQG0iHMGSRTM9Xyw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Practice Software Testing - Toolshop - v5.0' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
+                                      </uix:NGetText.Target>
+                                      <uix:NGetText.TextString>
+                                        <OutArgument x:TypeArguments="x:String">
+                                          <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_6">firstProductTitle</CSharpReference>
+                                        </OutArgument>
+                                      </uix:NGetText.TextString>
+                                    </uix:NGetText>
+                                    <If sap:VirtualizedContainerService.HintSize="451.2,1373.6" sap2010:WorkflowViewState.IdRef="If_3">
+                                      <If.Condition>
+                                        <InArgument x:TypeArguments="x:Boolean">
+                                          <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_53">firstProductTitle.ToLower().Contains(str_SearchText.ToLower())</CSharpValue>
+                                        </InArgument>
+                                      </If.Condition>
+                                      <If.Then>
+                                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="449.6,620" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,178.4" sap2010:WorkflowViewState.IdRef="LogMessage_22" Level="Info">
+                                            <ui:LogMessage.Message>
+                                              <InArgument x:TypeArguments="x:Object">
+                                                <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_54">"Relevant product found"</CSharpValue>
+                                              </InArgument>
+                                            </ui:LogMessage.Message>
+                                          </ui:LogMessage>
+                                          <ar:passedStep sap:VirtualizedContainerService.HintSize="416,377.6" sap2010:WorkflowViewState.IdRef="passedStep_2" str_in_actualStep="Relevant searched product appeared successfully" str_in_expectedStep="Relevant searched product should appear successfully" str_in_stepDescription="Searching a product" str_in_stepName="Search Test">
+                                            <ar:passedStep.str_in_reportId>
+                                              <InArgument x:TypeArguments="x:Int32">
+                                                <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_55">reportIdLocal</CSharpValue>
+                                              </InArgument>
+                                            </ar:passedStep.str_in_reportId>
+                                            <ar:passedStep.str_in_testId>
+                                              <InArgument x:TypeArguments="x:String">
+                                                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_56">testIdLocal</CSharpValue>
+                                              </InArgument>
+                                            </ar:passedStep.str_in_testId>
+                                          </ar:passedStep>
+                                        </Sequence>
+                                      </If.Then>
+                                      <If.Else>
+                                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="449.6,620" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,178.4" sap2010:WorkflowViewState.IdRef="LogMessage_23" Level="Error">
+                                            <ui:LogMessage.Message>
+                                              <InArgument x:TypeArguments="x:Object">
+                                                <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_57">"Relevant product Not found"</CSharpValue>
+                                              </InArgument>
+                                            </ui:LogMessage.Message>
+                                          </ui:LogMessage>
+                                          <ar:failedStep sap:VirtualizedContainerService.HintSize="416,377.6" sap2010:WorkflowViewState.IdRef="failedStep_3" str_in_actualStep="Relevant searched product didn't appear" str_in_expectedStep="Relevant searched product should appear successfully" str_in_stepDescription="Searching a product" str_in_stepName="Search Test">
+                                            <ar:failedStep.str_in_reportId>
+                                              <InArgument x:TypeArguments="x:Int32">
+                                                <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_58">reportIdLocal</CSharpValue>
+                                              </InArgument>
+                                            </ar:failedStep.str_in_reportId>
+                                            <ar:failedStep.str_in_testId>
+                                              <InArgument x:TypeArguments="x:String">
+                                                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_59">testIdLocal</CSharpValue>
+                                              </InArgument>
+                                            </ar:failedStep.str_in_testId>
+                                          </ar:failedStep>
+                                        </Sequence>
+                                      </If.Else>
+                                    </If>
+                                  </Sequence>
+                                </uix:NCheckState.IfExists>
+                                <uix:NCheckState.IfNotExists>
+                                  <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="484.8,620" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,178.4" sap2010:WorkflowViewState.IdRef="LogMessage_24" Level="Error">
+                                      <ui:LogMessage.Message>
+                                        <InArgument x:TypeArguments="x:Object">
+                                          <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_60">"Result didn't Appear"</CSharpValue>
+                                        </InArgument>
+                                      </ui:LogMessage.Message>
+                                    </ui:LogMessage>
+                                    <ar:failedStep sap:VirtualizedContainerService.HintSize="416,377.6" sap2010:WorkflowViewState.IdRef="failedStep_4" str_in_actualStep="Home page didn't appear" str_in_expectedStep="Home page should appear" str_in_stepDescription="Searching a product" str_in_stepName="Search Test">
+                                      <ar:failedStep.str_in_reportId>
+                                        <InArgument x:TypeArguments="x:Int32">
+                                          <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_61">reportIdLocal</CSharpValue>
+                                        </InArgument>
+                                      </ar:failedStep.str_in_reportId>
+                                      <ar:failedStep.str_in_testId>
+                                        <InArgument x:TypeArguments="x:String">
+                                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_62">testIdLocal</CSharpValue>
+                                        </InArgument>
+                                      </ar:failedStep.str_in_testId>
+                                    </ar:failedStep>
+                                  </Sequence>
+                                </uix:NCheckState.IfNotExists>
+                                <uix:NCheckState.Target>
+                                  <uix:TargetAnchorable BrowserURL="practicesoftwaretesting.com" ContentHash="RA2e27Pf-EKeXfI3rQgeTg" DesignTimeRectangle="577, 375, 380, 498" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='card' tag='A' /&gt;" Guid="5cae5e5c-3d8f-4a43-a31d-50c8b5519350" InformativeScreenshot="8c82f5bfab55677f88aba68463f379e8.jpg" Reference="QUyr5HjRO0207_LWey3M3w/S4Jp-awW40W7TmuTWy0atQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Practice Software Testing - Toolshop - v5.0' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                                </uix:NCheckState.Target>
+                              </uix:NCheckState>
+                            </Sequence>
+                          </uix:NCheckState.IfExists>
+                          <uix:NCheckState.IfNotExists>
+                            <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="520,233.6" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,169.6" sap2010:WorkflowViewState.IdRef="LogMessage_25" Level="Info">
+                                <ui:LogMessage.Message>
+                                  <InArgument x:TypeArguments="x:Object">
+                                    <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_63">"Home Page didn't Appear"</CSharpValue>
+                                  </InArgument>
+                                </ui:LogMessage.Message>
+                              </ui:LogMessage>
+                            </Sequence>
+                          </uix:NCheckState.IfNotExists>
+                          <uix:NCheckState.Target>
+                            <uix:TargetAnchorable BrowserURL="practicesoftwaretesting.com" ContentHash="-3uA7W408kKu-s9esXEZ8w" DesignTimeRectangle="150, 428, 1620, 335" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='IMG' /&gt;" Guid="0a83befa-49a6-4bf2-8591-b3f8cc4dfd20" InformativeScreenshot="45e792ec0ae81f42345974398ebf5219.jpg" Reference="QUyr5HjRO0207_LWey3M3w/C7byz1-lSU61MsSW6_rAzA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Practice Software Testing - Toolshop - v5.0' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                          </uix:NCheckState.Target>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </uix:NCheckState>
                       </Sequence>
                     </uix:NCheckState.IfExists>
                     <uix:NCheckState.IfNotExists>
-                      <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,228" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                      <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="449.6,298.4" sap2010:WorkflowViewState.IdRef="Sequence_4">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="Test_login - Invoke Workflow File (TestCases\Test_login.xaml)" sap:VirtualizedContainerService.HintSize="416,168" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="TestCases\Test_login.xaml">
+                        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="Test_login - Invoke Workflow File (TestCases\Test_login.xaml)" sap:VirtualizedContainerService.HintSize="416,60.8" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="TestCases\Test_login.xaml">
                           <ui:InvokeWorkflowFile.Arguments>
                             <InArgument x:TypeArguments="x:Int32" x:Key="reportIdLocal">
                               <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_35">reportIdLocal</CSharpValue>
@@ -281,242 +520,266 @@
                               <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_37">testIdLocal</CSharpValue>
                             </InArgument>
                           </ui:InvokeWorkflowFile.Arguments>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
                         </ui:InvokeWorkflowFile>
-                      </Sequence>
-                    </uix:NCheckState.IfNotExists>
-                    <uix:NCheckState.Target>
-                      <uix:TargetAnchorable BrowserURL="practicesoftwaretesting.com/account" CVScreenId="3cead411-b42c-48ec-91fa-34c0137c2e5c" CvElementArea="1672, 269, 25, 26" CvTextArea="1541, 274, 127, 22" CvTextArgument="Deepak Gupta" CvType="ArrowButton" DesignTimeRectangle="1532, 257, 169, 50" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='menu' tag='A' /&gt;" Guid="b59996f0-d544-46e7-ad48-a9e7ad526dbf" InformativeScreenshot="a7810bfdf2cb20071a5c088e83d5c1c1.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Overview - Practice Software Testing - Toolshop - v5.0' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
-                    </uix:NCheckState.Target>
-                  </uix:NCheckState>
-                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Home(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="524,194" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="92d45d27-b05e-4def-b4cb-996dfe27f61d" Version="V5">
-                    <uix:NClick.Target>
-                      <uix:TargetAnchorable BrowserURL="practicesoftwaretesting.com/account" CVScreenId="66731387-b807-4dc0-b589-c36f5dc353c3" ContentHash="831fZ2zzGUiF74K6IhMcuA" CvTextArea="1242, 274, 55, 18" CvTextArgument="Home" CvType="Text" DesignTimeRectangle="1234, 257, 73, 50" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='navbarSupportedContent' tag='A' /&gt;" Guid="e0ee224c-2f2b-4c85-91de-e46ccb3d263a" InformativeScreenshot="e5211ed57c9fce51f7c82c0f22a67567.jpg" Reference="QUyr5HjRO0207_LWey3M3w/wQZ2FRyuf0GKVmbLn3z49g" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Overview - Practice Software Testing - Toolshop - v5.0' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
-                    </uix:NClick.Target>
-                  </uix:NClick>
-                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="524,175" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info">
-                    <ui:LogMessage.Message>
-                      <InArgument x:TypeArguments="x:Object">
-                        <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">"Clicked on Homepage"</CSharpValue>
-                      </InArgument>
-                    </ui:LogMessage.Message>
-                  </ui:LogMessage>
-                  <uix:NCheckState DelayBefore="0.8" DisplayName="Check App State 'IMG'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="524,4748" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="92d45d27-b05e-4def-b4cb-996dfe27f61d" Version="V5">
-                    <uix:NCheckState.IfExists>
-                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="522,4186" sap2010:WorkflowViewState.IdRef="Sequence_5">
-                        <sap:WorkflowViewStateService.ViewState>
-                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                          </scg:Dictionary>
-                        </sap:WorkflowViewStateService.ViewState>
-                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="488,175" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info">
-                          <ui:LogMessage.Message>
-                            <InArgument x:TypeArguments="x:Object">
-                              <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_28">"Home page appeared"</CSharpValue>
-                            </InArgument>
-                          </ui:LogMessage.Message>
-                        </ui:LogMessage>
-                        <uix:NMouseScroll KeyModifiers="{x:Null}" DelayBefore="0.9" Direction="Down" DisplayName="Mouse Scroll" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="488,315" sap2010:WorkflowViewState.IdRef="NMouseScroll_1" InteractionMode="HardwareEvents" MovementUnits="10" ScopeIdentifier="92d45d27-b05e-4def-b4cb-996dfe27f61d" Version="V5">
-                          <uix:NMouseScroll.SearchedElement>
-                            <uix:SearchedElement>
-                              <uix:SearchedElement.InUiElement>
-                                <InArgument x:TypeArguments="ui:UiElement" />
-                              </uix:SearchedElement.InUiElement>
-                              <uix:SearchedElement.OutUiElement>
-                                <OutArgument x:TypeArguments="ui:UiElement" />
-                              </uix:SearchedElement.OutUiElement>
-                              <uix:SearchedElement.Target>
-                                <uix:TargetAnchorable BrowserURL="practicesoftwaretesting.com" CVScreenId="aafd1ba9-2fa8-4e26-89ed-7fd2604f9cbf" ContentHash="sUV8gLKIZEurVMBQW0RFzQ" CvElementArea="146, 718, 254, 51" CvType="InputBox" DesignTimeRectangle="148, 720, 252, 47" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='search-query' tag='INPUT' aaname='Search' /&gt;" Guid="bed30285-148e-4615-9f49-7aaa2b989904" InformativeScreenshot="384b1a874b0a8e92bde1b799772e646f.jpg" Reference="QUyr5HjRO0207_LWey3M3w/EU09nBNrfUaWKWQIYe2LpA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Practice Software Testing - Toolshop - v5.0' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None" />
-                              </uix:SearchedElement.Target>
-                              <uix:SearchedElement.Timeout>
-                                <InArgument x:TypeArguments="x:Double" />
-                              </uix:SearchedElement.Timeout>
-                            </uix:SearchedElement>
-                          </uix:NMouseScroll.SearchedElement>
-                        </uix:NMouseScroll>
-                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="488,175" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info">
-                          <ui:LogMessage.Message>
-                            <InArgument x:TypeArguments="x:Object">
-                              <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_29">"Scrolled Down to Search Box"</CSharpValue>
-                            </InArgument>
-                          </ui:LogMessage.Message>
-                        </ui:LogMessage>
-                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Mouse Scroll'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="488,246" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="SameAsCard" ScopeIdentifier="92d45d27-b05e-4def-b4cb-996dfe27f61d" Version="V5">
-                          <uix:NTypeInto.Target>
-                            <uix:TargetAnchorable BrowserURL="practicesoftwaretesting.com" CVScreenId="aafd1ba9-2fa8-4e26-89ed-7fd2604f9cbf" ContentHash="sUV8gLKIZEurVMBQW0RFzQ" CvElementArea="146, 718, 254, 51" CvType="InputBox" DesignTimeRectangle="148, 720, 252, 47" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='search-query' tag='INPUT' aaname='Search' /&gt;" Guid="bed30285-148e-4615-9f49-7aaa2b989904" InformativeScreenshot="384b1a874b0a8e92bde1b799772e646f.jpg" Reference="QUyr5HjRO0207_LWey3M3w/EU09nBNrfUaWKWQIYe2LpA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Practice Software Testing - Toolshop - v5.0' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None" />
-                          </uix:NTypeInto.Target>
-                          <uix:NTypeInto.Text>
-                            <InArgument x:TypeArguments="x:String">
-                              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_19">str_SearchText</CSharpValue>
-                            </InArgument>
-                          </uix:NTypeInto.Text>
-                        </uix:NTypeInto>
-                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="488,175" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info">
-                          <ui:LogMessage.Message>
-                            <InArgument x:TypeArguments="x:Object">
-                              <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_23">"Entered the thing that we wanted to search."</CSharpValue>
-                            </InArgument>
-                          </ui:LogMessage.Message>
-                        </ui:LogMessage>
-                        <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="2" DelayBefore="1" DisplayName="Click 'Search'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="488,194" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="92d45d27-b05e-4def-b4cb-996dfe27f61d" Version="V5">
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Home(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,60.8" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="92d45d27-b05e-4def-b4cb-996dfe27f61d" Version="V5">
                           <uix:NClick.Target>
-                            <uix:TargetAnchorable BrowserURL="practicesoftwaretesting.com" CVScreenId="b4db1496-1143-4d87-87f1-aeebaf722798" ContentHash="dX863oAJPkalQJCq-ir_aw" CvElementArea="437, 381, 95, 50" CvTextArea="455, 396, 61, 18" CvTextArgument="Search" CvType="Button" DesignTimeRectangle="441, 382, 91, 47" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" Guid="9abab3ec-742c-4bc9-9bc9-cb92451cc745" InformativeScreenshot="25b6ae1b0f942cf34d8c391e15efd72b.jpg" Reference="QUyr5HjRO0207_LWey3M3w/NxAfDZg56kGQgWZ_qgyhDw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Practice Software Testing - Toolshop - v5.0' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
-                              <uix:TargetAnchorable.Anchors>
-                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                  <uix:Target CVScreenId="b4db1496-1143-4d87-87f1-aeebaf722798" CvElementArea="399, 381, 44, 49" CvTextArea="412, 396, 15, 18" CvTextArgument="X" CvType="Button" DesignTimeRectangle="399, 382, 43, 47" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='reset' class='btn btn-warning' aaname='X ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='X' /&gt;" Guid="cbd1e6d6-1931-4c88-a854-a82127c08a72" SearchSteps="FuzzySelector, CV" />
-                                </scg:List>
-                              </uix:TargetAnchorable.Anchors>
-                            </uix:TargetAnchorable>
+                            <uix:TargetAnchorable BrowserURL="practicesoftwaretesting.com/account" CVScreenId="ea178c6c-b8a3-4d81-8ac7-b0f193be1a88" ContentHash="BBHlJ3p6DkGtJhwjtfQM5g" DesignTimeRectangle="1234, 257, 73, 50" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='navbarSupportedContent' tag='A' aaname='Home' /&gt;" Guid="504b9c15-c5db-497a-b26d-474d9e3b0fb7" InformativeScreenshot="e5211ed57c9fce51f7c82c0f22a67567.jpg" Reference="QUyr5HjRO0207_LWey3M3w/wQZ2FRyuf0GKVmbLn3z49g" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Overview - Practice Software Testing - Toolshop - v5.0' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
                           </uix:NClick.Target>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
                         </uix:NClick>
-                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="488,175" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info">
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,60.8" sap2010:WorkflowViewState.IdRef="LogMessage_17" Level="Info">
                           <ui:LogMessage.Message>
                             <InArgument x:TypeArguments="x:Object">
-                              <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_7">"Clicked on search button"</CSharpValue>
+                              <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_64">"Clicked on Homepage"</CSharpValue>
                             </InArgument>
                           </ui:LogMessage.Message>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
                         </ui:LogMessage>
-                        <uix:NCheckState DisplayName="Check App State 'Claw Hammer with Shock …'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="488,2671" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="92d45d27-b05e-4def-b4cb-996dfe27f61d" Version="V5">
+                        <uix:NCheckState DelayBefore="0.8" DisplayName="Check App State 'IMG'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="416,52" sap2010:WorkflowViewState.IdRef="NCheckState_5" ScopeIdentifier="92d45d27-b05e-4def-b4cb-996dfe27f61d" Version="V5">
                           <uix:NCheckState.IfExists>
-                            <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="486,1726" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                            <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="520,4265.6" sap2010:WorkflowViewState.IdRef="Sequence_26">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="452,175" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Info">
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="486.4,178.4" sap2010:WorkflowViewState.IdRef="LogMessage_26" Level="Info">
                                 <ui:LogMessage.Message>
                                   <InArgument x:TypeArguments="x:Object">
-                                    <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_24">"Search Result appears"</CSharpValue>
+                                    <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_65">"Home page appeared"</CSharpValue>
                                   </InArgument>
                                 </ui:LogMessage.Message>
                               </ui:LogMessage>
-                              <uix:NGetText DelayBefore="2" DisplayName="Get Text 'Claw Hammer with Shock …(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,143" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="92d45d27-b05e-4def-b4cb-996dfe27f61d" Version="V5">
-                                <uix:NGetText.Target>
-                                  <uix:TargetAnchorable BrowserURL="practicesoftwaretesting.com" ContentHash="I5tyNU9wwk2SsXDVDmLQOw" DesignTimeRectangle="598, 696, 338, 60" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='H5' /&gt;" Guid="c94ba388-165a-43d9-9f59-7980321c2628" InformativeScreenshot="6f2982c31b02e19f8e969382b1de6dc7.jpg" Reference="QUyr5HjRO0207_LWey3M3w/zosXwwBQG0iHMGSRTM9Xyw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Practice Software Testing - Toolshop - v5.0' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
-                                </uix:NGetText.Target>
-                                <uix:NGetText.TextString>
-                                  <OutArgument x:TypeArguments="x:String">
-                                    <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">firstProductTitle</CSharpReference>
-                                  </OutArgument>
-                                </uix:NGetText.TextString>
-                              </uix:NGetText>
-                              <If sap:VirtualizedContainerService.HintSize="452,1348" sap2010:WorkflowViewState.IdRef="If_1">
-                                <If.Condition>
-                                  <InArgument x:TypeArguments="x:Boolean">
-                                    <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_15">firstProductTitle.ToLower().Contains(str_SearchText.ToLower())</CSharpValue>
+                              <uix:NMouseScroll KeyModifiers="{x:Null}" DelayBefore="0.9" Direction="Down" DisplayName="Mouse Scroll" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486.4,318.4" sap2010:WorkflowViewState.IdRef="NMouseScroll_3" InteractionMode="HardwareEvents" MovementUnits="10" ScopeIdentifier="92d45d27-b05e-4def-b4cb-996dfe27f61d" Version="V5">
+                                <uix:NMouseScroll.SearchedElement>
+                                  <uix:SearchedElement>
+                                    <uix:SearchedElement.InUiElement>
+                                      <InArgument x:TypeArguments="ui:UiElement" />
+                                    </uix:SearchedElement.InUiElement>
+                                    <uix:SearchedElement.OutUiElement>
+                                      <OutArgument x:TypeArguments="ui:UiElement" />
+                                    </uix:SearchedElement.OutUiElement>
+                                    <uix:SearchedElement.Target>
+                                      <uix:TargetAnchorable BrowserURL="practicesoftwaretesting.com" CVScreenId="aafd1ba9-2fa8-4e26-89ed-7fd2604f9cbf" ContentHash="sUV8gLKIZEurVMBQW0RFzQ" CvElementArea="146, 718, 254, 51" CvType="InputBox" DesignTimeRectangle="148, 720, 252, 47" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='search-query' tag='INPUT' aaname='Search' /&gt;" Guid="bed30285-148e-4615-9f49-7aaa2b989904" InformativeScreenshot="384b1a874b0a8e92bde1b799772e646f.jpg" Reference="QUyr5HjRO0207_LWey3M3w/EU09nBNrfUaWKWQIYe2LpA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Practice Software Testing - Toolshop - v5.0' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None" />
+                                    </uix:SearchedElement.Target>
+                                    <uix:SearchedElement.Timeout>
+                                      <InArgument x:TypeArguments="x:Double" />
+                                    </uix:SearchedElement.Timeout>
+                                  </uix:SearchedElement>
+                                </uix:NMouseScroll.SearchedElement>
+                              </uix:NMouseScroll>
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="486.4,178.4" sap2010:WorkflowViewState.IdRef="LogMessage_27" Level="Info">
+                                <ui:LogMessage.Message>
+                                  <InArgument x:TypeArguments="x:Object">
+                                    <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_66">"Scrolled Down to Search Box"</CSharpValue>
                                   </InArgument>
-                                </If.Condition>
-                                <If.Then>
-                                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,609" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                                </ui:LogMessage.Message>
+                              </ui:LogMessage>
+                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Mouse Scroll'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486.4,249.6" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="SameAsCard" ScopeIdentifier="92d45d27-b05e-4def-b4cb-996dfe27f61d" Version="V5">
+                                <uix:NTypeInto.Target>
+                                  <uix:TargetAnchorable BrowserURL="practicesoftwaretesting.com" CVScreenId="aafd1ba9-2fa8-4e26-89ed-7fd2604f9cbf" ContentHash="sUV8gLKIZEurVMBQW0RFzQ" CvElementArea="146, 718, 254, 51" CvType="InputBox" DesignTimeRectangle="148, 720, 252, 47" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='search-query' tag='INPUT' aaname='Search' /&gt;" Guid="bed30285-148e-4615-9f49-7aaa2b989904" InformativeScreenshot="384b1a874b0a8e92bde1b799772e646f.jpg" Reference="QUyr5HjRO0207_LWey3M3w/EU09nBNrfUaWKWQIYe2LpA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Practice Software Testing - Toolshop - v5.0' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None" />
+                                </uix:NTypeInto.Target>
+                                <uix:NTypeInto.Text>
+                                  <InArgument x:TypeArguments="x:String">
+                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_67">str_SearchText</CSharpValue>
+                                  </InArgument>
+                                </uix:NTypeInto.Text>
+                              </uix:NTypeInto>
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="486.4,178.4" sap2010:WorkflowViewState.IdRef="LogMessage_28" Level="Info">
+                                <ui:LogMessage.Message>
+                                  <InArgument x:TypeArguments="x:Object">
+                                    <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_68">"Entered the thing that we wanted to search."</CSharpValue>
+                                  </InArgument>
+                                </ui:LogMessage.Message>
+                              </ui:LogMessage>
+                              <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="2" DelayBefore="1" DisplayName="Click 'Search'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486.4,197.6" sap2010:WorkflowViewState.IdRef="NClick_7" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="92d45d27-b05e-4def-b4cb-996dfe27f61d" Version="V5">
+                                <uix:NClick.Target>
+                                  <uix:TargetAnchorable BrowserURL="practicesoftwaretesting.com" CVScreenId="b4db1496-1143-4d87-87f1-aeebaf722798" ContentHash="dX863oAJPkalQJCq-ir_aw" CvElementArea="437, 381, 95, 50" CvTextArea="455, 396, 61, 18" CvTextArgument="Search" CvType="Button" DesignTimeRectangle="441, 382, 91, 47" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" Guid="9abab3ec-742c-4bc9-9bc9-cb92451cc745" InformativeScreenshot="25b6ae1b0f942cf34d8c391e15efd72b.jpg" Reference="QUyr5HjRO0207_LWey3M3w/NxAfDZg56kGQgWZ_qgyhDw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Practice Software Testing - Toolshop - v5.0' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
+                                    <uix:TargetAnchorable.Anchors>
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                        <uix:Target CVScreenId="b4db1496-1143-4d87-87f1-aeebaf722798" CvElementArea="399, 381, 44, 49" CvTextArea="412, 396, 15, 18" CvTextArgument="X" CvType="Button" DesignTimeRectangle="399, 382, 43, 47" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='reset' class='btn btn-warning' aaname='X ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='X' /&gt;" Guid="cbd1e6d6-1931-4c88-a854-a82127c08a72" SearchSteps="FuzzySelector, CV" />
+                                      </scg:List>
+                                    </uix:TargetAnchorable.Anchors>
+                                  </uix:TargetAnchorable>
+                                </uix:NClick.Target>
+                              </uix:NClick>
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="486.4,178.4" sap2010:WorkflowViewState.IdRef="LogMessage_29" Level="Info">
+                                <ui:LogMessage.Message>
+                                  <InArgument x:TypeArguments="x:Object">
+                                    <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_69">"Clicked on search button"</CSharpValue>
+                                  </InArgument>
+                                </ui:LogMessage.Message>
+                              </ui:LogMessage>
+                              <uix:NCheckState DisplayName="Check App State 'Claw Hammer with Shock …'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="486.4,2722.4" sap2010:WorkflowViewState.IdRef="NCheckState_7" ScopeIdentifier="92d45d27-b05e-4def-b4cb-996dfe27f61d" Version="V5">
+                                <uix:NCheckState.IfExists>
+                                  <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="484.8,1762.4" sap2010:WorkflowViewState.IdRef="Sequence_24">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="LogMessage_11" Level="Info">
+                                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="451.2,178.4" sap2010:WorkflowViewState.IdRef="LogMessage_30" Level="Info">
                                       <ui:LogMessage.Message>
                                         <InArgument x:TypeArguments="x:Object">
-                                          <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_16">"Relevant product found"</CSharpValue>
+                                          <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_70">"Search Result appears"</CSharpValue>
                                         </InArgument>
                                       </ui:LogMessage.Message>
                                     </ui:LogMessage>
-                                    <ar:passedStep sap:VirtualizedContainerService.HintSize="416,374" sap2010:WorkflowViewState.IdRef="passedStep_1" str_in_actualStep="Relevant searched product appeared successfully" str_in_expectedStep="Relevant searched product should appear successfully" str_in_stepDescription="Searching a product" str_in_stepName="Search Test">
-                                      <ar:passedStep.str_in_reportId>
-                                        <InArgument x:TypeArguments="x:Int32">
-                                          <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_38">reportIdLocal</CSharpValue>
+                                    <uix:NGetText DelayBefore="4" DisplayName="Get Text 'Claw Hammer with Shock …(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,146.4" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="92d45d27-b05e-4def-b4cb-996dfe27f61d" Version="V5">
+                                      <uix:NGetText.Target>
+                                        <uix:TargetAnchorable BrowserURL="practicesoftwaretesting.com" ContentHash="I5tyNU9wwk2SsXDVDmLQOw" DesignTimeRectangle="598, 696, 338, 60" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='H5' /&gt;" Guid="c94ba388-165a-43d9-9f59-7980321c2628" InformativeScreenshot="6f2982c31b02e19f8e969382b1de6dc7.jpg" Reference="QUyr5HjRO0207_LWey3M3w/zosXwwBQG0iHMGSRTM9Xyw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Practice Software Testing - Toolshop - v5.0' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
+                                      </uix:NGetText.Target>
+                                      <uix:NGetText.TextString>
+                                        <OutArgument x:TypeArguments="x:String">
+                                          <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_7">firstProductTitle</CSharpReference>
+                                        </OutArgument>
+                                      </uix:NGetText.TextString>
+                                    </uix:NGetText>
+                                    <If sap:VirtualizedContainerService.HintSize="451.2,1373.6" sap2010:WorkflowViewState.IdRef="If_4">
+                                      <If.Condition>
+                                        <InArgument x:TypeArguments="x:Boolean">
+                                          <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_71">firstProductTitle.ToLower().Contains(str_SearchText.ToLower())</CSharpValue>
                                         </InArgument>
-                                      </ar:passedStep.str_in_reportId>
-                                      <ar:passedStep.str_in_testId>
-                                        <InArgument x:TypeArguments="x:String">
-                                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_39">testIdLocal</CSharpValue>
-                                        </InArgument>
-                                      </ar:passedStep.str_in_testId>
-                                    </ar:passedStep>
+                                      </If.Condition>
+                                      <If.Then>
+                                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="449.6,620" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,178.4" sap2010:WorkflowViewState.IdRef="LogMessage_31" Level="Info">
+                                            <ui:LogMessage.Message>
+                                              <InArgument x:TypeArguments="x:Object">
+                                                <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_72">"Relevant product found"</CSharpValue>
+                                              </InArgument>
+                                            </ui:LogMessage.Message>
+                                          </ui:LogMessage>
+                                          <ar:passedStep sap:VirtualizedContainerService.HintSize="416,377.6" sap2010:WorkflowViewState.IdRef="passedStep_3" str_in_actualStep="Relevant searched product appeared successfully" str_in_expectedStep="Relevant searched product should appear successfully" str_in_stepDescription="Searching a product" str_in_stepName="Search Test">
+                                            <ar:passedStep.str_in_reportId>
+                                              <InArgument x:TypeArguments="x:Int32">
+                                                <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_73">reportIdLocal</CSharpValue>
+                                              </InArgument>
+                                            </ar:passedStep.str_in_reportId>
+                                            <ar:passedStep.str_in_testId>
+                                              <InArgument x:TypeArguments="x:String">
+                                                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_74">testIdLocal</CSharpValue>
+                                              </InArgument>
+                                            </ar:passedStep.str_in_testId>
+                                          </ar:passedStep>
+                                        </Sequence>
+                                      </If.Then>
+                                      <If.Else>
+                                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="449.6,620" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,178.4" sap2010:WorkflowViewState.IdRef="LogMessage_32" Level="Error">
+                                            <ui:LogMessage.Message>
+                                              <InArgument x:TypeArguments="x:Object">
+                                                <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_75">"Relevant product Not found"</CSharpValue>
+                                              </InArgument>
+                                            </ui:LogMessage.Message>
+                                          </ui:LogMessage>
+                                          <ar:failedStep sap:VirtualizedContainerService.HintSize="416,377.6" sap2010:WorkflowViewState.IdRef="failedStep_5" str_in_actualStep="Relevant searched product didn't appear" str_in_expectedStep="Relevant searched product should appear successfully" str_in_stepDescription="Searching a product" str_in_stepName="Search Test">
+                                            <ar:failedStep.str_in_reportId>
+                                              <InArgument x:TypeArguments="x:Int32">
+                                                <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_76">reportIdLocal</CSharpValue>
+                                              </InArgument>
+                                            </ar:failedStep.str_in_reportId>
+                                            <ar:failedStep.str_in_testId>
+                                              <InArgument x:TypeArguments="x:String">
+                                                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_77">testIdLocal</CSharpValue>
+                                              </InArgument>
+                                            </ar:failedStep.str_in_testId>
+                                          </ar:failedStep>
+                                        </Sequence>
+                                      </If.Else>
+                                    </If>
                                   </Sequence>
-                                </If.Then>
-                                <If.Else>
-                                  <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,609" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                                </uix:NCheckState.IfExists>
+                                <uix:NCheckState.IfNotExists>
+                                  <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="484.8,620" sap2010:WorkflowViewState.IdRef="Sequence_25">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="LogMessage_12" Level="Error">
+                                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,178.4" sap2010:WorkflowViewState.IdRef="LogMessage_33" Level="Error">
                                       <ui:LogMessage.Message>
                                         <InArgument x:TypeArguments="x:Object">
-                                          <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_17">"Relevant product Not found"</CSharpValue>
+                                          <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_78">"Result didn't Appear"</CSharpValue>
                                         </InArgument>
                                       </ui:LogMessage.Message>
                                     </ui:LogMessage>
-                                    <ar:failedStep sap:VirtualizedContainerService.HintSize="416,374" sap2010:WorkflowViewState.IdRef="failedStep_1" str_in_actualStep="Relevant searched product didn't appear" str_in_expectedStep="Relevant searched product should appear successfully" str_in_stepDescription="Searching a product" str_in_stepName="Search Test">
+                                    <ar:failedStep sap:VirtualizedContainerService.HintSize="416,377.6" sap2010:WorkflowViewState.IdRef="failedStep_6" str_in_actualStep="Home page didn't appear" str_in_expectedStep="Home page should appear" str_in_stepDescription="Searching a product" str_in_stepName="Search Test">
                                       <ar:failedStep.str_in_reportId>
                                         <InArgument x:TypeArguments="x:Int32">
-                                          <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_40">reportIdLocal</CSharpValue>
+                                          <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_79">reportIdLocal</CSharpValue>
                                         </InArgument>
                                       </ar:failedStep.str_in_reportId>
                                       <ar:failedStep.str_in_testId>
                                         <InArgument x:TypeArguments="x:String">
-                                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_41">testIdLocal</CSharpValue>
+                                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_80">testIdLocal</CSharpValue>
                                         </InArgument>
                                       </ar:failedStep.str_in_testId>
                                     </ar:failedStep>
                                   </Sequence>
-                                </If.Else>
-                              </If>
+                                </uix:NCheckState.IfNotExists>
+                                <uix:NCheckState.Target>
+                                  <uix:TargetAnchorable BrowserURL="practicesoftwaretesting.com" ContentHash="RA2e27Pf-EKeXfI3rQgeTg" DesignTimeRectangle="577, 375, 380, 498" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='card' tag='A' /&gt;" Guid="5cae5e5c-3d8f-4a43-a31d-50c8b5519350" InformativeScreenshot="8c82f5bfab55677f88aba68463f379e8.jpg" Reference="QUyr5HjRO0207_LWey3M3w/S4Jp-awW40W7TmuTWy0atQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Practice Software Testing - Toolshop - v5.0' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                                </uix:NCheckState.Target>
+                              </uix:NCheckState>
                             </Sequence>
                           </uix:NCheckState.IfExists>
                           <uix:NCheckState.IfNotExists>
-                            <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="486,609" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                            <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="520,233.6" sap2010:WorkflowViewState.IdRef="Sequence_27">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="LogMessage_13" Level="Error">
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,169.6" sap2010:WorkflowViewState.IdRef="LogMessage_34" Level="Info">
                                 <ui:LogMessage.Message>
                                   <InArgument x:TypeArguments="x:Object">
-                                    <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_25">"Result didn't Appear"</CSharpValue>
+                                    <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_81">"Home Page didn't Appear"</CSharpValue>
                                   </InArgument>
                                 </ui:LogMessage.Message>
                               </ui:LogMessage>
-                              <ar:failedStep sap:VirtualizedContainerService.HintSize="416,374" sap2010:WorkflowViewState.IdRef="failedStep_2" str_in_actualStep="Home page didn't appear" str_in_expectedStep="Home page should appear" str_in_stepDescription="Searching a product" str_in_stepName="Search Test">
-                                <ar:failedStep.str_in_reportId>
-                                  <InArgument x:TypeArguments="x:Int32">
-                                    <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_42">reportIdLocal</CSharpValue>
-                                  </InArgument>
-                                </ar:failedStep.str_in_reportId>
-                                <ar:failedStep.str_in_testId>
-                                  <InArgument x:TypeArguments="x:String">
-                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_43">testIdLocal</CSharpValue>
-                                  </InArgument>
-                                </ar:failedStep.str_in_testId>
-                              </ar:failedStep>
                             </Sequence>
                           </uix:NCheckState.IfNotExists>
                           <uix:NCheckState.Target>
-                            <uix:TargetAnchorable BrowserURL="practicesoftwaretesting.com" ContentHash="RA2e27Pf-EKeXfI3rQgeTg" DesignTimeRectangle="577, 375, 380, 498" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='card' tag='A' /&gt;" Guid="5cae5e5c-3d8f-4a43-a31d-50c8b5519350" InformativeScreenshot="8c82f5bfab55677f88aba68463f379e8.jpg" Reference="QUyr5HjRO0207_LWey3M3w/S4Jp-awW40W7TmuTWy0atQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Practice Software Testing - Toolshop - v5.0' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                            <uix:TargetAnchorable BrowserURL="practicesoftwaretesting.com" ContentHash="-3uA7W408kKu-s9esXEZ8w" DesignTimeRectangle="150, 428, 1620, 335" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='IMG' /&gt;" Guid="0a83befa-49a6-4bf2-8591-b3f8cc4dfd20" InformativeScreenshot="45e792ec0ae81f42345974398ebf5219.jpg" Reference="QUyr5HjRO0207_LWey3M3w/C7byz1-lSU61MsSW6_rAzA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Practice Software Testing - Toolshop - v5.0' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                           </uix:NCheckState.Target>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
                         </uix:NCheckState>
-                      </Sequence>
-                    </uix:NCheckState.IfExists>
-                    <uix:NCheckState.IfNotExists>
-                      <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="522,226" sap2010:WorkflowViewState.IdRef="Sequence_6">
-                        <sap:WorkflowViewStateService.ViewState>
-                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                          </scg:Dictionary>
-                        </sap:WorkflowViewStateService.ViewState>
-                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info">
-                          <ui:LogMessage.Message>
-                            <InArgument x:TypeArguments="x:Object">
-                              <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_26">"Home Page didn't Appear"</CSharpValue>
-                            </InArgument>
-                          </ui:LogMessage.Message>
-                        </ui:LogMessage>
                       </Sequence>
                     </uix:NCheckState.IfNotExists>
                     <uix:NCheckState.Target>
-                      <uix:TargetAnchorable BrowserURL="practicesoftwaretesting.com" ContentHash="-3uA7W408kKu-s9esXEZ8w" DesignTimeRectangle="150, 428, 1620, 335" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='IMG' /&gt;" Guid="0a83befa-49a6-4bf2-8591-b3f8cc4dfd20" InformativeScreenshot="45e792ec0ae81f42345974398ebf5219.jpg" Reference="QUyr5HjRO0207_LWey3M3w/C7byz1-lSU61MsSW6_rAzA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Practice Software Testing - Toolshop - v5.0' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                      <uix:TargetAnchorable BrowserURL="practicesoftwaretesting.com/account" CVScreenId="3cead411-b42c-48ec-91fa-34c0137c2e5c" CvElementArea="1672, 269, 25, 26" CvTextArea="1541, 274, 127, 22" CvTextArgument="Deepak Gupta" CvType="ArrowButton" DesignTimeRectangle="1532, 257, 169, 50" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='menu' tag='A' /&gt;" Guid="b59996f0-d544-46e7-ad48-a9e7ad526dbf" InformativeScreenshot="a7810bfdf2cb20071a5c088e83d5c1c1.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Overview - Practice Software Testing - Toolshop - v5.0' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
                     </uix:NCheckState.Target>
                   </uix:NCheckState>
                 </Sequence>
@@ -524,7 +787,7 @@
             </uix:NApplicationCard.Body>
             <uix:NApplicationCard.CloseMode>
               <InArgument x:TypeArguments="uix:NAppCloseMode">
-                <CSharpValue x:TypeArguments="uix:NAppCloseMode" sap2010:WorkflowViewState.IdRef="CSharpValue`1_10">UiPath.UIAutomationNext.Enums.NAppCloseMode.Never</CSharpValue>
+                <CSharpValue x:TypeArguments="uix:NAppCloseMode" sap2010:WorkflowViewState.IdRef="CSharpValue`1_45">UiPath.UIAutomationNext.Enums.NAppCloseMode.Never</CSharpValue>
               </InArgument>
             </uix:NApplicationCard.CloseMode>
             <uix:NApplicationCard.OCREngine>
@@ -540,7 +803,14 @@
               </InArgument>
             </uix:NApplicationCard.OpenMode>
             <uix:NApplicationCard.TargetApp>
-              <uix:TargetApp Area="-8, -8, 1382, 736" BrowserType="Chrome" ContentHash="jPQSTii640-UP1fzLdlJTQ" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOQSURBVDhPHdDpT9sFAMbxnzHxWDZlG4bAdNwbKFdxCSBzm4CwwcY1w8BJhxtyNMhYuWHQg1JaenFIgXK2UCgFWugBJVBQwMVX/gO+8I3xnfGFJr78mvHi8/KbPHmEnS07Ae8qAZ+DXZ+D/cA6R0EPPx75Of5pj5OTIMdnDjg5DXL66ojTn484Pj3k+PQIYddjx+e24d9axre1zK7PyV7Aze7OBnsBF4FdFwH/Ogd7Lg6DHg4PfQSDOxwc+Nnf9yI45gz4XYv4XFa8m1Z2vOsE/Jvs+DfweZy4XSusL5lZndVjmTSwtmbDt72CZ2uFbfcqwpZz4Sz2uGx4XTbc61amJ0xotRo6OjppkbZjHBml8bunpKWk8qjya5ZmjCzNmlhZNCP4tld5ze91srI8R6tUilj8lLrG5zQ2SXnyTEJ5hZi4qGhCzr2NKCmB6XEti9NGLD/oEM5mrttw2GdpqK8nOSmFiPBwKr/5lsFRC90DegoL7xMdFkJMWAi14kcsLUyemZnQI/h9bnxeN+pBFSLRDc69+w5vvfkGWaIU9F3P0UnrkVQWk5/xCV99mYVuoIepUQ2WcS1jwzIE75YTu22Oyqpq4mJiiQm/SHToeT6OuMTDglyK7peQf+8BdY/LkLc1YBlVM2lQYtYrMA29RLBOG5F1NpP7RQ6fpSaQk36dG/FXiAy9wPUkETfzS8nKKUT6opl5s555s47ZcQ3To2rGdAoE02A3jdVllORlIy7OpeR2OnfS4ki6GkpE2AekZd4hNSsPSX091plxZicMmEeGGNOr0A32Iwx0Smirq0QprUXeUsuzslweZCeTlfgRVy5fIDY+ke+LcvilvQqHUcHosAqDWo5W2YuypxVhRNWBWdPD/IiSGb2MvqYniIuyuZuRSMKHoRREXeTXqlT+6yzl1XAbU/pBxrRKdAN9qF62ISxOaLBbDMyPD2ExKhnqbqau4i7Fn4v49NpVSqPe56Agmr8kefyhrsOmUzCiljOk6KO/qx3BaZ1kY2ka25SRKcMAenkH0toqynMyuJ0Sz83Iy5hSQ/j9cRr/9Fawp37BhEaOVtGLrKsVYc02g2NxEuuUCcvrczT9yNsk1JTlU5SZTFZcBI2x5zkuiOJf6T1+G6zBoupCJ+tC2d2K4Nl04Fyawz5vZmHSyIReyUB3C03VDym/lc6txEjKIt9jLeMSfzdk8udQDVZlK3pZJ6oeKf8DaghvRLQAO+gAAAAASUVORK5CYII=" InformativeScreenshot="26cc5e698a5fe44202f59639ac815f3e.jpg" Reference="QUyr5HjRO0207_LWey3M3w/Bx2vxX47L0Kxv6Ep43adwQ" Selector="&lt;html app='chrome.exe' title='Practice Software Testing - Toolshop - v5.0' /&gt;" Url="https://practicesoftwaretesting.com/" Version="V2" />
+              <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" ContentHash="TBaY4Jo-y0q9p7xDTGBh4g" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAOQSURBVDhPHdDpT9sFAMbxnzHxWDZlG4bAdNwbKFdxCSBzm4CwwcY1w8BJhxtyNMhYuWHQg1JaenFIgXK2UCgFWugBJVBQwMVX/gO+8I3xnfGFJr78mvHi8/KbPHmEnS07Ae8qAZ+DXZ+D/cA6R0EPPx75Of5pj5OTIMdnDjg5DXL66ojTn484Pj3k+PQIYddjx+e24d9axre1zK7PyV7Aze7OBnsBF4FdFwH/Ogd7Lg6DHg4PfQSDOxwc+Nnf9yI45gz4XYv4XFa8m1Z2vOsE/Jvs+DfweZy4XSusL5lZndVjmTSwtmbDt72CZ2uFbfcqwpZz4Sz2uGx4XTbc61amJ0xotRo6OjppkbZjHBml8bunpKWk8qjya5ZmjCzNmlhZNCP4tld5ze91srI8R6tUilj8lLrG5zQ2SXnyTEJ5hZi4qGhCzr2NKCmB6XEti9NGLD/oEM5mrttw2GdpqK8nOSmFiPBwKr/5lsFRC90DegoL7xMdFkJMWAi14kcsLUyemZnQI/h9bnxeN+pBFSLRDc69+w5vvfkGWaIU9F3P0UnrkVQWk5/xCV99mYVuoIepUQ2WcS1jwzIE75YTu22Oyqpq4mJiiQm/SHToeT6OuMTDglyK7peQf+8BdY/LkLc1YBlVM2lQYtYrMA29RLBOG5F1NpP7RQ6fpSaQk36dG/FXiAy9wPUkETfzS8nKKUT6opl5s555s47ZcQ3To2rGdAoE02A3jdVllORlIy7OpeR2OnfS4ki6GkpE2AekZd4hNSsPSX091plxZicMmEeGGNOr0A32Iwx0Smirq0QprUXeUsuzslweZCeTlfgRVy5fIDY+ke+LcvilvQqHUcHosAqDWo5W2YuypxVhRNWBWdPD/IiSGb2MvqYniIuyuZuRSMKHoRREXeTXqlT+6yzl1XAbU/pBxrRKdAN9qF62ISxOaLBbDMyPD2ExKhnqbqau4i7Fn4v49NpVSqPe56Agmr8kefyhrsOmUzCiljOk6KO/qx3BaZ1kY2ka25SRKcMAenkH0toqynMyuJ0Sz83Iy5hSQ/j9cRr/9Fawp37BhEaOVtGLrKsVYc02g2NxEuuUCcvrczT9yNsk1JTlU5SZTFZcBI2x5zkuiOJf6T1+G6zBoupCJ+tC2d2K4Nl04Fyawz5vZmHSyIReyUB3C03VDym/lc6txEjKIt9jLeMSfzdk8udQDVZlK3pZJ6oeKf8DaghvRLQAO+gAAAAASUVORK5CYII=" InformativeScreenshot="e85c581e16d8896fa0ad8554b25836f7.jpg" Reference="QUyr5HjRO0207_LWey3M3w/Bx2vxX47L0Kxv6Ep43adwQ" Selector="&lt;html app='chrome.exe' title='Overview - Practice Software Testing - Toolshop - v5.0' /&gt;" Url="https://practicesoftwaretesting.com/account" Version="V2">
+                <uix:TargetApp.Arguments>
+                  <InArgument x:TypeArguments="x:String" />
+                </uix:TargetApp.Arguments>
+                <uix:TargetApp.WorkingDirectory>
+                  <InArgument x:TypeArguments="x:String" />
+                </uix:TargetApp.WorkingDirectory>
+              </uix:TargetApp>
             </uix:NApplicationCard.TargetApp>
           </uix:NApplicationCard>
         </Sequence>
@@ -551,13 +821,13 @@
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="594,226" sap2010:WorkflowViewState.IdRef="Sequence_12">
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="520,233.6" sap2010:WorkflowViewState.IdRef="Sequence_12">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="560,166" sap2010:WorkflowViewState.IdRef="LogMessage_14" Level="Info">
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="486.4,169.6" sap2010:WorkflowViewState.IdRef="LogMessage_14" Level="Info">
                 <ui:LogMessage.Message>
                   <InArgument x:TypeArguments="x:Object">
                     <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_20">"System Error Occurred: " + exception.Message</CSharpValue>
@@ -569,7 +839,7 @@
         </Catch>
       </TryCatch.Catches>
       <TryCatch.Finally>
-        <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="594,90" sap2010:WorkflowViewState.IdRef="Sequence_13">
+        <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="520,94.4" sap2010:WorkflowViewState.IdRef="Sequence_13">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>

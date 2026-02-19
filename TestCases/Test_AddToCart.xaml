@@ -149,7 +149,7 @@
       <AssemblyReference>System.Collections.Immutable</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="770,11520" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap:VirtualizedContainerService.HintSize="877.2,11560.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="cartProductTitle" />
       <Variable x:TypeArguments="x:String" Name="addedProductName" />
@@ -159,29 +159,29 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Delay Duration="00:00:07" sap:VirtualizedContainerService.HintSize="560,123" sap2010:WorkflowViewState.IdRef="Delay_1" />
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="560,11374" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <Delay Duration="00:00:07" sap:VirtualizedContainerService.HintSize="560,122.4" sap2010:WorkflowViewState.IdRef="Delay_1" />
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="560,11415.2" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
-        <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="558,10510" sap2010:WorkflowViewState.IdRef="Sequence_7">
+        <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="558.4,10548" sap2010:WorkflowViewState.IdRef="Sequence_7">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <If sap:VirtualizedContainerService.HintSize="524,447" sap2010:WorkflowViewState.IdRef="If_4">
+          <If sap:VirtualizedContainerService.HintSize="524.8,462.4" sap2010:WorkflowViewState.IdRef="If_4">
             <If.Condition>
               <InArgument x:TypeArguments="x:Boolean">
                 <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_57">reportIdLocal.Equals(0)==true</CSharpValue>
               </InArgument>
             </If.Condition>
             <If.Then>
-              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,218" sap2010:WorkflowViewState.IdRef="Sequence_12">
+              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="449.6,225.6" sap2010:WorkflowViewState.IdRef="Sequence_12">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ra:CreateReport ContinueOnError="{x:Null}" DisplayName="Create Report" sap:VirtualizedContainerService.HintSize="416,158" sap2010:WorkflowViewState.IdRef="CreateReport_1" ReportName="Test_AddToCartReport">
+                <ra:CreateReport ContinueOnError="{x:Null}" DisplayName="Create Report" sap:VirtualizedContainerService.HintSize="416,161.6" sap2010:WorkflowViewState.IdRef="CreateReport_1" ReportName="Test_AddToCartReport">
                   <ra:CreateReport.ReportLocation>
                     <InArgument x:TypeArguments="x:String">
                       <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_58">Environment.GetFolderPath(Environment.SpecialFolder.UserProfile)+"\\Downloads\\Reports"</CSharpValue>
@@ -196,7 +196,7 @@
               </Sequence>
             </If.Then>
             <If.Else>
-              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,90" sap2010:WorkflowViewState.IdRef="Sequence_13">
+              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="449.6,94.4" sap2010:WorkflowViewState.IdRef="Sequence_13">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -205,7 +205,7 @@
               </Sequence>
             </If.Else>
           </If>
-          <ra:StartSuite ContinueOnError="{x:Null}" DisplayName="Start Suite" sap:VirtualizedContainerService.HintSize="524,118" sap2010:WorkflowViewState.IdRef="StartSuite_1" SuiteName="Test_AddToCartSuite">
+          <ra:StartSuite ContinueOnError="{x:Null}" DisplayName="Start Suite" sap:VirtualizedContainerService.HintSize="524.8,121.6" sap2010:WorkflowViewState.IdRef="StartSuite_1" SuiteName="Test_AddToCartSuite">
             <ra:StartSuite.ReportId>
               <InArgument x:TypeArguments="x:Int32">
                 <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_59">reportIdLocal</CSharpValue>
@@ -217,7 +217,7 @@
               </OutArgument>
             </ra:StartSuite.suiteId>
           </ra:StartSuite>
-          <ra:StartTest ContinueOnError="{x:Null}" TagName="{x:Null}" TestDescription="{x:Null}" DisplayName="Start Test" sap:VirtualizedContainerService.HintSize="524,118" sap2010:WorkflowViewState.IdRef="StartTest_1" Priority="Low" TestName="Test_AddToCartReport">
+          <ra:StartTest ContinueOnError="{x:Null}" TagName="{x:Null}" TestDescription="{x:Null}" DisplayName="Start Test" sap:VirtualizedContainerService.HintSize="524.8,121.6" sap2010:WorkflowViewState.IdRef="StartTest_1" Priority="Low" TestName="Test_AddToCartReport">
             <ra:StartTest.ReportId>
               <InArgument x:TypeArguments="x:Int32">
                 <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_60">reportIdLocal</CSharpValue>
@@ -234,19 +234,19 @@
               </OutArgument>
             </ra:StartTest.testId>
           </ra:StartTest>
-          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Practice Software Testing - Toolshop -" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="524,9767" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="db459ec4-ad30-4418-b104-b10d370db10a" Version="V2">
+          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Practice Software Testing - Toolshop -" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="524.8,9778.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="db459ec4-ad30-4418-b104-b10d370db10a" Version="V2">
             <uix:NApplicationCard.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="522,9573" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="521.6,9580.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <uix:NCheckState DisplayName="Check App State 'Searched for pliers'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="488,9513" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="db459ec4-ad30-4418-b104-b10d370db10a" Version="V5">
+                  <uix:NCheckState DisplayName="Check App State 'Searched for pliers'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="488,9516.8" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="db459ec4-ad30-4418-b104-b10d370db10a" Version="V5">
                     <uix:NCheckState.IfExists>
                       <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="486,4500" sap2010:WorkflowViewState.IdRef="Sequence_3">
                         <sap:WorkflowViewStateService.ViewState>
@@ -720,7 +720,7 @@
             </uix:NApplicationCard.Body>
             <uix:NApplicationCard.CloseMode>
               <InArgument x:TypeArguments="uix:NAppCloseMode">
-                <CSharpValue x:TypeArguments="uix:NAppCloseMode" sap2010:WorkflowViewState.IdRef="CSharpValue`1_36">UiPath.UIAutomationNext.Enums.NAppCloseMode.Never</CSharpValue>
+                <CSharpValue x:TypeArguments="uix:NAppCloseMode" sap2010:WorkflowViewState.IdRef="CSharpValue`1_77">UiPath.UIAutomationNext.Enums.NAppCloseMode.Never</CSharpValue>
               </InArgument>
             </uix:NApplicationCard.CloseMode>
             <uix:NApplicationCard.OCREngine>
@@ -736,7 +736,14 @@
               </InArgument>
             </uix:NApplicationCard.OpenMode>
             <uix:NApplicationCard.TargetApp>
-              <uix:TargetApp Area="-8, -8, 1382, 736" BrowserType="Chrome" ContentHash="3z8Sn-q83E2adUXPuXA_qQ" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOQSURBVDhPHdDpT9sFAMbxnzHxWDZlG4bAdNwbKFdxCSBzm4CwwcY1w8BJhxtyNMhYuWHQg1JaenFIgXK2UCgFWugBJVBQwMVX/gO+8I3xnfGFJr78mvHi8/KbPHmEnS07Ae8qAZ+DXZ+D/cA6R0EPPx75Of5pj5OTIMdnDjg5DXL66ojTn484Pj3k+PQIYddjx+e24d9axre1zK7PyV7Aze7OBnsBF4FdFwH/Ogd7Lg6DHg4PfQSDOxwc+Nnf9yI45gz4XYv4XFa8m1Z2vOsE/Jvs+DfweZy4XSusL5lZndVjmTSwtmbDt72CZ2uFbfcqwpZz4Sz2uGx4XTbc61amJ0xotRo6OjppkbZjHBml8bunpKWk8qjya5ZmjCzNmlhZNCP4tld5ze91srI8R6tUilj8lLrG5zQ2SXnyTEJ5hZi4qGhCzr2NKCmB6XEti9NGLD/oEM5mrttw2GdpqK8nOSmFiPBwKr/5lsFRC90DegoL7xMdFkJMWAi14kcsLUyemZnQI/h9bnxeN+pBFSLRDc69+w5vvfkGWaIU9F3P0UnrkVQWk5/xCV99mYVuoIepUQ2WcS1jwzIE75YTu22Oyqpq4mJiiQm/SHToeT6OuMTDglyK7peQf+8BdY/LkLc1YBlVM2lQYtYrMA29RLBOG5F1NpP7RQ6fpSaQk36dG/FXiAy9wPUkETfzS8nKKUT6opl5s555s47ZcQ3To2rGdAoE02A3jdVllORlIy7OpeR2OnfS4ki6GkpE2AekZd4hNSsPSX091plxZicMmEeGGNOr0A32Iwx0Smirq0QprUXeUsuzslweZCeTlfgRVy5fIDY+ke+LcvilvQqHUcHosAqDWo5W2YuypxVhRNWBWdPD/IiSGb2MvqYniIuyuZuRSMKHoRREXeTXqlT+6yzl1XAbU/pBxrRKdAN9qF62ISxOaLBbDMyPD2ExKhnqbqau4i7Fn4v49NpVSqPe56Agmr8kefyhrsOmUzCiljOk6KO/qx3BaZ1kY2ka25SRKcMAenkH0toqynMyuJ0Sz83Iy5hSQ/j9cRr/9Fawp37BhEaOVtGLrKsVYc02g2NxEuuUCcvrczT9yNsk1JTlU5SZTFZcBI2x5zkuiOJf6T1+G6zBoupCJ+tC2d2K4Nl04Fyawz5vZmHSyIReyUB3C03VDym/lc6txEjKIt9jLeMSfzdk8udQDVZlK3pZJ6oeKf8DaghvRLQAO+gAAAAASUVORK5CYII=" InformativeScreenshot="2f2200764e36b8392c46134ab25a9285.jpg" Reference="QUyr5HjRO0207_LWey3M3w/DZMHxGj72Ua_-niX1_67VQ" Selector="&lt;html app='chrome.exe' title='Practice Software Testing - Toolshop - v5.0' /&gt;" Url="https://practicesoftwaretesting.com/" Version="V2" />
+              <uix:TargetApp Area="-8, -8, 1382, 736" BrowserType="Chrome" ContentHash="3z8Sn-q83E2adUXPuXA_qQ" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOQSURBVDhPHdDpT9sFAMbxnzHxWDZlG4bAdNwbKFdxCSBzm4CwwcY1w8BJhxtyNMhYuWHQg1JaenFIgXK2UCgFWugBJVBQwMVX/gO+8I3xnfGFJr78mvHi8/KbPHmEnS07Ae8qAZ+DXZ+D/cA6R0EPPx75Of5pj5OTIMdnDjg5DXL66ojTn484Pj3k+PQIYddjx+e24d9axre1zK7PyV7Aze7OBnsBF4FdFwH/Ogd7Lg6DHg4PfQSDOxwc+Nnf9yI45gz4XYv4XFa8m1Z2vOsE/Jvs+DfweZy4XSusL5lZndVjmTSwtmbDt72CZ2uFbfcqwpZz4Sz2uGx4XTbc61amJ0xotRo6OjppkbZjHBml8bunpKWk8qjya5ZmjCzNmlhZNCP4tld5ze91srI8R6tUilj8lLrG5zQ2SXnyTEJ5hZi4qGhCzr2NKCmB6XEti9NGLD/oEM5mrttw2GdpqK8nOSmFiPBwKr/5lsFRC90DegoL7xMdFkJMWAi14kcsLUyemZnQI/h9bnxeN+pBFSLRDc69+w5vvfkGWaIU9F3P0UnrkVQWk5/xCV99mYVuoIepUQ2WcS1jwzIE75YTu22Oyqpq4mJiiQm/SHToeT6OuMTDglyK7peQf+8BdY/LkLc1YBlVM2lQYtYrMA29RLBOG5F1NpP7RQ6fpSaQk36dG/FXiAy9wPUkETfzS8nKKUT6opl5s555s47ZcQ3To2rGdAoE02A3jdVllORlIy7OpeR2OnfS4ki6GkpE2AekZd4hNSsPSX091plxZicMmEeGGNOr0A32Iwx0Smirq0QprUXeUsuzslweZCeTlfgRVy5fIDY+ke+LcvilvQqHUcHosAqDWo5W2YuypxVhRNWBWdPD/IiSGb2MvqYniIuyuZuRSMKHoRREXeTXqlT+6yzl1XAbU/pBxrRKdAN9qF62ISxOaLBbDMyPD2ExKhnqbqau4i7Fn4v49NpVSqPe56Agmr8kefyhrsOmUzCiljOk6KO/qx3BaZ1kY2ka25SRKcMAenkH0toqynMyuJ0Sz83Iy5hSQ/j9cRr/9Fawp37BhEaOVtGLrKsVYc02g2NxEuuUCcvrczT9yNsk1JTlU5SZTFZcBI2x5zkuiOJf6T1+G6zBoupCJ+tC2d2K4Nl04Fyawz5vZmHSyIReyUB3C03VDym/lc6txEjKIt9jLeMSfzdk8udQDVZlK3pZJ6oeKf8DaghvRLQAO+gAAAAASUVORK5CYII=" InformativeScreenshot="2f2200764e36b8392c46134ab25a9285.jpg" Reference="QUyr5HjRO0207_LWey3M3w/DZMHxGj72Ua_-niX1_67VQ" Selector="&lt;html app='chrome.exe' title='Practice Software Testing - Toolshop - v5.0' /&gt;" Url="https://practicesoftwaretesting.com/" Version="V2">
+                <uix:TargetApp.Arguments>
+                  <InArgument x:TypeArguments="x:String" />
+                </uix:TargetApp.Arguments>
+                <uix:TargetApp.WorkingDirectory>
+                  <InArgument x:TypeArguments="x:String" />
+                </uix:TargetApp.WorkingDirectory>
+              </uix:TargetApp>
             </uix:NApplicationCard.TargetApp>
           </uix:NApplicationCard>
         </Sequence>

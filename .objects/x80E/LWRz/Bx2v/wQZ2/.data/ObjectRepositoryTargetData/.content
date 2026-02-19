@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="831fZ2zzGUiF74K6IhMcuA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<ObjectRepositoryTargetData ContentHash="BBHlJ3p6DkGtJhwjtfQM5g" Reference="QUyr5HjRO0207_LWey3M3w/wQZ2FRyuf0GKVmbLn3z49g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="practicesoftwaretesting.com/account" CVScreenId="66731387-b807-4dc0-b589-c36f5dc353c3" CvTextArea="1242, 274, 55, 18" CvTextArgument="Home" CvType="Text" DesignTimeRectangle="1234, 257, 73, 50" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='navbarSupportedContent' tag='A' /&gt;" Guid="e0ee224c-2f2b-4c85-91de-e46ccb3d263a" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Overview - Practice Software Testing - Toolshop - v5.0' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="e5211ed57c9fce51f7c82c0f22a67567.jpg" xmlns="">0zRIvjfssu0GoaOq2UC1H8Q</imageRef>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="practicesoftwaretesting.com/account" CVScreenId="ea178c6c-b8a3-4d81-8ac7-b0f193be1a88" DesignTimeRectangle="1234, 257, 73, 50" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='navbarSupportedContent' tag='A' aaname='Home' /&gt;" Guid="504b9c15-c5db-497a-b26d-474d9e3b0fb7" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Overview - Practice Software Testing - Toolshop - v5.0' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="e5211ed57c9fce51f7c82c0f22a67567.jpg" xmlns="">0a-XOSmBt1U6sXD136THklg</imageRef>
     </TargetAnchorable>
     <x:String x:Key="ActivityType">Click</x:String>
   </ObjectRepositoryTargetData.Data>

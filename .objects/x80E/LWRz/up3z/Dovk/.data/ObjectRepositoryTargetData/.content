@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="ml2s0MVgpke5NCelgmAh7w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<ObjectRepositoryTargetData ContentHash="ztdESFpctkmCn2PNaPOpDA" Reference="QUyr5HjRO0207_LWey3M3w/Dovki5F37kWgUitBxgM-TA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="practicesoftwaretesting.com/checkout" CVScreenId="60e019be-0fdb-48ad-8b34-7ed57fa353b4" CvElementArea="1563, 644, 217, 51" CvTextArea="1580, 661, 185, 18" CvTextArgument="Proceed to checkout" CvType="Button" DesignTimeRectangle="1566, 646, 213, 47" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Proceed to checkout' tag='BUTTON' type='button' /&gt;" Guid="0ac43219-0055-41ab-a183-8c9c6377530f" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Checkout - Practice Software Testing - Toolshop - v5.0' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="e517143c90495a654c93ba34d7c6adc8.jpg" xmlns="">0UU-RtinwAkOaITCpukvH5w</imageRef>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="practicesoftwaretesting.com/checkout" CVScreenId="7cacdaf2-2753-449f-805a-c4456f920478" DesignTimeRectangle="1566, 646, 213, 47" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Proceed to checkout' tag='BUTTON' type='button' /&gt;" Guid="efc5f1e2-6215-41ed-8968-f4f20af978e5" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Checkout - Practice Software Testing - Toolshop - v5.0' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="b69ff8cb0e8f2b9f0fc79acf3a8d6f43.jpg" xmlns="">0L54sYtjuhEuzMK9zVCkADQ</imageRef>
     </TargetAnchorable>
     <x:String x:Key="ActivityType">CheckState</x:String>
   </ObjectRepositoryTargetData.Data>
