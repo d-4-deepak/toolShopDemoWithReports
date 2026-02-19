@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="j1IIxxjuXk-AYQceveDStw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="practicesoftwaretesting.com/auth/register" CVScreenId="992b3b3d-be9f-4251-b91a-ff18e461a5c8" CvElementArea="564, 334, 247, 51" CvType="InputBox" DesignTimeRectangle="566, 336, 242, 47" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='postal_code' tag='INPUT' type='text' class='form-control ng-untouched ng-pristine ng-invalid' placeholder='Your Postcode *' aaname='Postal code' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' fuzzylevel:placeholder='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="7d2e8ba1-c714-412f-be9e-845bb6392d2c" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Register - Practice Software Testing - Toolshop - v5.0' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="992b3b3d-be9f-4251-b91a-ff18e461a5c8" CvTextArea="565, 302, 102, 18" CvTextArgument="Postal code" CvType="Text" DesignTimeRectangle="566, 296, 102, 30" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Postal code' tag='LABEL' type='' class='form-label' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Postal code' /&gt;" Guid="817866e5-dc89-449a-91da-b1922297093c" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="046c40c594d7daa620fc791d3bbfcece.jpg" xmlns="">0L5Vl_aKvpki5kBzuEx9CPQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
