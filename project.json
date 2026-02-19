@@ -82,6 +82,13 @@
         "testCaseId": "6f16a4b0-de88-43ad-a5cc-f9efd3849e88",
         "testCaseType": "TestCase",
         "fileName": "main.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "af1f2fc3-1a7b-40d4-81ed-7f103e9f0509",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "TestData\\GetTestData.xaml"
       }
     ],
     "saveToCloud": false
